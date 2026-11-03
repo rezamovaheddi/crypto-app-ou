@@ -1,4 +1,4 @@
-import { clsx,type,ClassValue } from "clsx";
+import { clsx,ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
@@ -6,5 +6,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function FormatNumber(num: number): string {
-    return new Intl.NumberFormat('fa-IR').format(num);
+    return new Intl.NumberFormat('en-US').format(num);
+}
+
+export function FormatCurrency(num: number): string {
+    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(num);
 }
