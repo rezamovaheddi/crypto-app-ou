@@ -9,6 +9,18 @@ export function FormatNumber(num: number): string {
     return new Intl.NumberFormat('en-US').format(num);
 }
 
-export function FormatCurrency(num: number): string {
-    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(num);
+export function formatCurrency(value: number, currency = 'USD'): string {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency,
+    minimumFractionDigits: value < 1 ? 4 : 2,
+    maximumFractionDigits: value < 1 ? 6 : 2,
+  }).format(value);
+}
+
+export function formatCompactNumber(value: number): string {
+  return new Intl.NumberFormat('en-US', {
+    notation: 'compact',
+    maximumFractionDigits: 2,
+  }).format(value);
 }

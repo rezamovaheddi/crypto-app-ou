@@ -1,6 +1,6 @@
 // src/shared/api/httpClient.ts
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://api.example.com';
+const BASE_URL = process.env.PUBLIC_API_URL || 'https://api.example.com';
 
 interface RequestOptions extends RequestInit {
   params?: Record<string, string | number | boolean>;

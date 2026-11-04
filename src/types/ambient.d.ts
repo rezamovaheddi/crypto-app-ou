@@ -1,17 +1,14 @@
 declare namespace NodeJS {
-  interface ProcessEnv {
-    readonly NODE_ENV: 'development' | 'production' | 'test';
-    readonly NEXT_PUBLIC_API_URL: string;
-  }
+    interface ProcessEnv {
+        readonly NODE_ENV: 'development'| 'production' | 'test';
+        readonly PUBLIC_API_CRYPTO: string;
+        readonly DATABASE_URL: string;
+
+    }
 }
 
-interface Window {
-  __APP_CONFIG__?: {
-    version: string;
-  };
-}
 declare module '*.svg' {
-  import React from 'react';
-  const SVG: React.FC<React.SVGProps<SVGSVGElement>>;
-  export default SVG;
+    import React from 'react';
+    const svg: React.FC<React.SVGProps<SVGSVGElement>>;
+    export default svg; 
 }
