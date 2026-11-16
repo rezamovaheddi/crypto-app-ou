@@ -1,11 +1,7 @@
-// src/features/market/api/market.api.ts
 import { httpClient } from '@/shared/api/client';
 import { CoinMarket, GetMarketParams } from '@/types/market.types';
 
 export const marketApi = {
-  /**
-   * دریافت لیست ارزهای دیجیتال برای نمایش در بخش مارکت
-   */
   getCoins: (params?: GetMarketParams) => {
     return httpClient<CoinMarket[]>('/api/market', {
       method: 'GET',
