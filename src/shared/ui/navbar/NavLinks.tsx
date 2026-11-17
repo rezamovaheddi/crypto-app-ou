@@ -21,7 +21,7 @@ export function NavLinks({ className = '', onItemClick }: NavLinksProps) {
             key={item.href}
             href={item.href}
             onClick={onItemClick}
-            className={`text-sm font-medium transition-colors duration-200 ${
+            className={`text-sm font-medium transition-colors duration-200 hover:border-b${
               isActive
                 ? 'text-amber-400 font-semibold'
                 : 'text-zinc-400 hover:text-zinc-100'
