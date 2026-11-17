@@ -9,9 +9,3 @@ export interface CoinMarket {
   totalVolume: number;
 }
 
-export interface GetMarketParams {
-  page?: number;
-  limit?: number;
-  currency?: 'usd' | 'eur';
-  search?: string;
-}
