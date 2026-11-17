@@ -12,8 +12,16 @@ export interface MarketCoinData {
     pice_change: number;
     sparkline_in_7d?:{
         price: number[];
-    };
-}
+   } };
+
+    export interface GetMarketParams {
+    page?: number;
+    limit?: number;
+    currency?: 'usd' | 'eur';
+    search?: string;
+    }
+
+
 
 export type ShortField = 'market_cap_desc' | 'price_desc' | 'price_asc' | 'change_desc';
 
