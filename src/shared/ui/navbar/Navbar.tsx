@@ -5,7 +5,7 @@ import { MobileMenu } from './MobileMenu';
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-5 w-full bg-[#05090f] border-b border-zinc-600/55">
+    <header className="sticky top-0 z-30 w-full bg-[#05090f] border-b border-zinc-600/55">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center justify-between">
         
         {/* بخش لوگو (سمت چپ) */}
@@ -14,7 +14,7 @@ export function Navbar() {
           <div className="flex items-center justify-center w-9 h-9 rounded-full border-2 border-amber-400 text-amber-400 font-black text-lg">
             C
           </div>
-          <span className="text-xl font-extrabold tracking-wider text-amber-400">
+          <span className="text-xl extrabold tracking-wider text-amber-400 font-orbitron">
             CryptoPulse
           </span>
         </Link>
