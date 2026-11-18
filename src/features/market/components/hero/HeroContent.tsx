@@ -13,13 +13,13 @@ export const HeroContent = () => {
           Live Market Data
         </span>
       </div> */}
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold font-sans tracking-tight text-white leading-[1.15]">
-        Welcome Back. <br />
-        Let&apos;s <span className="text-amber-400">Trade.</span>
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold font-orbitron tracking-tight text-white leading-[1.15] ">
+        Track <span className="text-amber-400">Live.</span> <br />
+        Let&apos;s <span className="text-[#22BD5A]">Trade.</span>
       </h1>
 
-      <p className=" text-base sm:text-lg max-w-lg leading-relaxed">
-        Your portfolio is live. Spot the next opportunity and grow your virtual funds.
+      <p className=" font-bold text-lg sm:text-lg text leading-relaxed text-gray-400">
+       Get <b className='text-white'>$1,000</b> to start, with unlimited virtual funding. Practice trading on real-time markets with zero risk.
       </p>
 
       <div className="flex flex-wrap items-center gap-4 pt-2">
