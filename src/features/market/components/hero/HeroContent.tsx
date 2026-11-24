@@ -38,7 +38,7 @@ export const HeroContent = () => {
         </Link>
       </div>
 
-      {/* Bottom Trust Badges */}
+
       <div className="flex flex-wrap items-center gap-6 pt-4">
         {HERO_FEATURE.map(({ id, label, icon: Icon }) => (
           <div key={id} className="flex items-center gap-2 text-xs sm:text-sm text-slate-400">
