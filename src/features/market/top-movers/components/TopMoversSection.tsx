@@ -27,7 +27,7 @@ export const TopMoversSection = ({ className }: TopMoversSectionProps) => {
       <div className="absolute top-1/3 -left-24 w-96 h-96 bg-amber-500/10 rounded-full blur-[130px] pointer-events-none" />
       <div className="absolute -bottom-24 right-0 w-96 h-96 bg-blue-700/15 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="relative z-15 container mx-auto px-14 sm:px-6 lg:px-8 max-w-6xl">
+      <div className="relative z-15 container mx-auto px-14 sm:px-6 lg:px-8 max-w-7xl">
         <TopMoversHeader />
 
         {error ? (

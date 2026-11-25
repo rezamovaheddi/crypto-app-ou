@@ -5,7 +5,7 @@ export const TopMoverRow = ({ coin, variant }: TopMoverRowProps) => {
   const isGainer = variant === 'gainers';
   const formattedChange = Math.abs(coin.change24h).toFixed(2);
   return (
-    <div className="flex items-center justify-between px-5 py-3.5 hover:bg-white/[0.02] transition-colors">
+    <div className="flex items-center justify-between px-5 py-5 hover:bg-white/[0.02] transition-colors">
       {/* سمت چپ: آیکون، نام و نماد */}
       <div className="flex items-center gap-3 min-w-0">
         {coin.iconUrl ? (
