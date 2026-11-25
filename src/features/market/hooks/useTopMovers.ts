@@ -18,7 +18,7 @@ export const useTopMoversStore = create<TopMoversState>((set) => ({
   fetchTopMovers: async () => {
     set({ isLoading: true, error: null });
     try {
-      const data = await marketApi.getTopMovers({ limit: 5 });
+      const data = await marketApi.getTopMovers({ limit: 4 });
 
       set({
         gainers: data.gainers,
